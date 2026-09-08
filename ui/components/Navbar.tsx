@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Button from "@/components/Button";
+import Logo from "@/components/Logo";
 import { IconChevronDown, IconMenu, IconWorld } from "@tabler/icons-react";
 
 export default function Navbar() {
     return (
         <nav className="flex items-center justify-between py-4 px-8 lg:px-20 bg-black">
             <div className="flex items-center gap-x-16">
-                <Link href="/">
-                    <div className="size-6 bg-white"></div>
-                </Link>
+                <Logo className="bg-white" />
                 <div className="hidden lg:flex items-center gap-x-3">
                     <Link href="/">
                         <Button variant="primary">
