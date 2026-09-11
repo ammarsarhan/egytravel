@@ -1,9 +1,7 @@
 "use client";
 
-import Button from "@/components/Button";
-import { BaseInput } from "@/components/Input";
 import Logo from "@/components/Logo";
-import { IconChevronRight } from "@tabler/icons-react";
+import ProgressBar from "@/components/ProgressBar";
 import { motion, Variants } from "framer-motion";
 
 const container: Variants = {
@@ -31,9 +29,12 @@ export default function Trip() {
     >
       <motion.nav
         variants={item}
-        className="flex items-center justify-between py-4 px-8 lg:px-20 my-1"
+        className="flex items-center justify-between py-4 px-8 lg:px-20 my-1 relative"
       >
         <Logo className="bg-white" extended containerStyle="text-white" />
+        <div className="absolute left-1/2 top-1/2 -translate-1/2">
+          <ProgressBar />
+        </div>
       </motion.nav>
       <div className="h-full">
         <motion.div variants={item} className="col-span-1 flex items-center justify-center">
