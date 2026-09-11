@@ -31,14 +31,12 @@ export default function Navbar() {
             </div>
             <div className="flex items-center gap-x-3">
                 <div className="hidden lg:flex items-center gap-x-2">
-                    <Link href={"/"}>
-                        <Button variant="primary">
-                            <div className="flex items-center gap-x-1.5">
-                                <IconWorld size={16} strokeWidth={2.5} />
-                                <span>EN</span>
-                            </div>
-                        </Button>
-                    </Link>
+                    <Button variant="primary">
+                        <div className="flex items-center gap-x-1.5">
+                            <IconWorld size={16} strokeWidth={2.5} />
+                            <span>EN</span>
+                        </div>
+                    </Button>
                     <Link href={"/"}>
                         <Button variant="primary">Help</Button>
                     </Link>
